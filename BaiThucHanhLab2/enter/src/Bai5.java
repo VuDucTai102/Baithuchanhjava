@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-public class Slide47 {
+public class bai5 {
     public static void main(String[] args) {
         int tong=0;
         int a;
