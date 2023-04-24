@@ -7,7 +7,7 @@ public class HinhVuong extends HinhChuNhat{
     // Constructor
 
     public HinhVuong(){
-      ten = "Hình Vuông";
+      super.setTen("Hinh Vuong");
     Scanner scanner = new Scanner ("Hình Vuông");
 
 
@@ -15,7 +15,8 @@ public class HinhVuong extends HinhChuNhat{
     public void nhapCanh(){
      System.out.println("Cạnh = "); 
       Scanner scanner = new Scanner(System.in);
-      dai = rong = scanner.nextFloat();
+      super.setDai(scanner.nextFloat());
+      super.setRong(super.getDai());
     }  
 
 }

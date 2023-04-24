@@ -2,32 +2,35 @@ package Shapes;
 
 import java.util.Scanner;
 
-    public class HinhTron extends HinhHoc{
 
-        final float PI = 3.14f;
-        float r;
-        float cv;
-        float dt;
-        {
-         ten = "Hình Tròn";
-        }
-         public void nhapBanKinh() {
+public class HinhTron extends HinhHoc {
+    private float banKinh;
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhap ban kinh r = : ");
-        r = scanner.nextFloat();
-        }
-         public void tinhChuVi()
-        {
-            cv = 2 * r * PI;
-        }
-         public void tinhDienTich(){
-           dienTich = r*r * PI;
-        }
-        public void inChuVi(String name)
-     {
-        System.out.printf("Chu vi hinh tron: ");
-        System.out.printf("Dien tinh hinh tron");
-       
-     }
+    public void setBanKinh(float banKinh) {
+        this.banKinh = banKinh;
+    }
+
+    public float getBanKinh() {
+        return banKinh;
+    }
+
+    public HinhTron() {
+        super.setTen("Hinh Tron");
+    }
+
+    public void NhapBanKinh(Scanner sc){
+        System.out.print("Nhap ban kinh: ");
+        setBanKinh(sc.nextFloat());
+    }
+
+    public void tinhChuvi() {
+        float chuVi = 2 * banKinh * super.getPi();
+        super.setChuVi(chuVi);
+    }
+
+    public void tinhDienTich() {
+        float dienTich = (float) Math.pow(banKinh, 2) * super.getPi();
+        super.setDienTich(dienTich);
+    }
+
 }

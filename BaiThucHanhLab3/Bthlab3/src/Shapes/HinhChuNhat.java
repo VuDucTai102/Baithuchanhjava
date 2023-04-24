@@ -1,12 +1,16 @@
 package Shapes;
 import java.util.Scanner;
 
-public class HinhChuNhat {
+public class HinhChuNhat extends HinhHoc {
 
     float dai;  // Chiều dài
     float rong; // Chiều rộng
     float cv;   // Chu vi
     float dt;   // Diện tích
+
+    public HinhChuNhat(){
+        ten = "Hình Chữ Nhât";
+    }
 
     public void nhapChieuDai() {
         System.out.println( "Hãy nhập vào Chiều dài Hình chữ nhật:");
@@ -36,4 +40,4 @@ public class HinhChuNhat {
         System.out.println("Diện tích Hình chữ Nhật: " + dt);
 
     }
-}
+ }

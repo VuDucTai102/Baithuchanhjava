@@ -1,28 +1,66 @@
 
 package Shapes;
 
-
 public class HinhHoc {
-    
-    public final float PI = 3.14f;
+    private final float Pi = 3.14f;
+    private String ten;
+    private float chuVi;
+    private float dienTich;
+    private float theTich;
 
-    public String ten;
-    public float chuVi;
-    public float dienTich;
-    public float theTich;
-    
+    public float getPi() {
+        return Pi;
+    }
 
-    public void xuatTen(){
-        System.out.println("\n\n=====" + ten + "====");
+    public String getTen() {
+        return ten;
+    }
 
+    public void setTen(String Ten) {
+        this.ten = Ten;
     }
-    public void inChuVi(){
-        System.out.println("Chu vi = " + chuVi);
+
+    public float getChuVi() {
+        return chuVi;
     }
-    public void inDienTich(){
-        System.out.println("Diện tích = " + dienTich);
+
+    public void setChuVi(float chuVi) {
+        this.chuVi = chuVi;
     }
-    public void inTheTich(){
-        System.out.println("Thể tích = " + theTich);
+
+    public float getDienTich() {
+        return dienTich;
     }
+
+    public void setDienTich(float dienTich) {
+        this.dienTich = dienTich;
+    }
+
+    public float getTheTich() {
+        return theTich;
+    }
+
+    public void setTheTich(float theTich) {
+        this.theTich = theTich;
+    }
+
+    public HinhHoc() {}
+
+    public void XuatTen() {
+        System.out.println("===="+this.ten+"====");
+    }
+
+    public void InChuVi() {
+        System.out.println("Chu vi = "+this.chuVi);
+    }
+
+    public void InDienTich() {
+        System.out.println("Dien tich = "+this.dienTich);
+    }
+
+    public void InTheTich() {
+        System.out.println("The tich = "+this.theTich);
+    }
+
 }
+
