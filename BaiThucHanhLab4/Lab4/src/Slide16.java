@@ -1,17 +1,18 @@
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Slide16 {
     
-    public  static void main(String[] args){
-
-        ArrayList<String> arrayListString = new ArrayList<>();
-
-        arrayListString.add("");
-
-        System.out.println(" Cac phan tu trong arrListString la: ");
-
-        for (int i= 0; i< 10; i++);{
-            System.out.println(arrayListString.get(i) + "\t");
+    public static void main(String[] args) throws Exception {
+        ArrayList<String> arrList = new ArrayList<>();
+        arrList.add ("JAVA");
+        arrList.add ("PHP");
+        arrList.add ("C#");
+        arrList.add ("C++");
+        
+        System.out.print("Cac phan tu co trong arrList la:");
+        for ( int i = 0; i < arrList.size(); i++){
+            System.out.print(arrList.get(i)+"\t");
         }
-    }
+}
 }
