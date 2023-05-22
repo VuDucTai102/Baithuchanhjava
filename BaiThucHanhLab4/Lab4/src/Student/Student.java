@@ -121,7 +121,7 @@ public class Student {
 
     // Lists
     public void XoaSinhVien(List<Student> std, Scanner sc) {
-        System.out.println("=======Xoa sinh vien=======");
+        System.out.println("======Xoa sinh vien======");
         System.out.print("Nhap ten sinh vien can xoa: ");
         String tim = sc.nextLine();
         Student stTim = null;
@@ -141,7 +141,7 @@ public class Student {
 
     // Sets
     public void XoaSinhVien(Set<Student> std, Scanner sc) {
-        System.out.println("=======Xoa sinh vien=======");
+        System.out.println("======Xoa sinh vien======");
         System.out.print("Nhap ten sinh vien can xoa: ");
         String tim = sc.nextLine();
         Student stTim = null;
