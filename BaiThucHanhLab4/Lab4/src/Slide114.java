@@ -60,12 +60,12 @@ public class  Slide114  {
     System.out.print("Nhap ma sinh vien can tim: ");
     String maSvCanTim = scanner.nextLine();
     SinhVien svCanTim = danhSachSinhVien.get(maSvCanTim);
-    if (svCanTim != null) {
+     if (svCanTim != null) {
         System.out.println("Thong tin cua sinh vien voi ma  " + maSvCanTim + ": " + svCanTim.getHoTen() + " - " + svCanTim.getLop());
-     else {
-        System.out.println("Khong tim thay sinh vien voi ma " + maSvCanTim);
-    }
-}
+    
+     else System.out.println("Khong tim thay sinh vien voi ma " + "maSvCanTim");
+        
+      }
 }
     }
 }

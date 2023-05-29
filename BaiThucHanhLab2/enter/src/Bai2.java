@@ -1,5 +1,5 @@
 // Viet chuong trinh kiem tra  so vua nhap vao la so chan hay le.
-package baithuchanhlab2;
+package baithuchanhLab2;
 
 
 import java.util.Scanner;

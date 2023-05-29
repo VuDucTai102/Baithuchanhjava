@@ -1,43 +1,48 @@
 package Shapes;
 import java.util.Scanner;
 
-public class HinhChuNhat extends HinhHoc {
-
-    float dai;  // Chiều dài
-    float rong; // Chiều rộng
-    float cv;   // Chu vi
-    float dt;   // Diện tích
-
-    public HinhChuNhat(){
-        ten = "Hình Chữ Nhât";
-    }
-
-    public void nhapChieuDai() {
-        System.out.println( "Hãy nhập vào Chiều dài Hình chữ nhật:");
-        Scanner scanner = new Scanner(System.in);
-        dai = scanner.nextFloat();
-
-    };
-
-    public void nhapChieuRong() {
-        System.out.println( "Hãy nhập vào Chiều rộng Hình chữ nhật:");
-        Scanner scanner = new Scanner(System.in);
-        dai = scanner.nextFloat();
-
-    }
+public class HinhChuNhat extends HinhHoc{
+    private float rong;
+    private float dai;
     
-    public void tinhChuVi(){
-        cv = 2 * (dai + rong);
+    public float getRong() {
+        return rong;
+    }
 
+    public void setRong(float rong) {
+        this.rong = rong;
     }
-    public void tinhDienTich(){
-        dt = dai * rong;
-    }
-    public void inChuVi(){
-        System.out.println("Chu vi Hình chữ Nhật: " + cv);
-    }
-    public void inDienTich(){
-        System.out.println("Diện tích Hình chữ Nhật: " + dt);
 
+    public float getDai() {
+        return dai;
     }
- }
+
+    public void setDai(float dai) {
+        this.dai = dai;
+    }
+
+    public HinhChuNhat() {
+        super.setTen("Hinh Chu Nhat");
+    }
+
+    public void NhapChieuDai(Scanner sc) {
+        System.out.print("Nhap chieu dai: ");
+        setDai(sc.nextFloat());
+    }
+
+    public void NhapChieuRong(Scanner sc) {
+        System.out.print("Nhap chieu rong: ");
+        setRong(sc.nextFloat());
+    }
+
+    public void TinhChuVi() {
+        float  chuVi = 2 * (dai + rong);
+        setChuVi(chuVi);
+    }
+
+    public void tinhDienTich() {
+        float dienTich = dai * rong;
+        setDienTich(dienTich);
+    }
+
+}
