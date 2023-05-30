@@ -5,8 +5,16 @@ public class Slide08 {
             try{
                  int a[] = new int[5];
                  
+            } catch(Exception e){
+                System.out.println("common task completed");
             }
-
+            catch(ArithmeticException e){
+                System.out.println("task 1 is completed");
+            }
+            catch(ArrayIndexOutOfBoundsException e){
+                System.out.println("task 2 is completed");
+            }
+            System.out.println("rest of the code. . .");
         }
     }
     
